@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sumit Kaulage — Portfolio</title>
+  <meta name="description" content="Portfolio of Sumit Kaulage — FY B.Tech CSE student. Projects: Virtual ATM (Java), Chatty (real-time chat).">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">Sumit Kaulage</a>
+
+      <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="nav">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <nav id="nav" class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="resume.pdf" download>Download Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi — I'm <span class="accent">Sumit Kaulage</span></h1>
+          <p class="lead">FY B.Tech — Computer Science &amp; Engineering<br>Sveris COE, Pandharpur</p>
+          <p>I build practical projects, learn fast, and love clean code. Here are my key skills, projects, and contact details.</p>
+
+          <div class="hero-actions">
+            <a class="btn" href="resume.pdf" download>Download Resume</a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+          </div>
+
+          <ul class="contact-quick">
+            <li>Email: <a href="mailto:sumitkaulage37@gmail.com">sumitkaulage37@gmail.com</a></li>
+            <li>Phone: <a href="tel:+919359656497">+91 93596 56497</a></li>
+            <li>Location: Pandharpur</li>
+          </ul>
+        </div>
+
+        <div class="hero-photo">
+          <!-- Replace the src with your photo path -->
+          <img src="1.jpeg" alt="Photo of Sumit Kaulage" 
+          id="profilePhoto" legth="200" width="150">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2>About Me</h2>
+      <p>I'm Sumit, currently pursuing FY B.Tech in CSE at Sveris COE, Pandharpur. I enjoy building Java applications and real-time systems. I keep my resume updated — download it above to view details on education and experience.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-head">
+            <span>Java</span><span>80%</span>
+          </div>
+          <div class="skill-bar" data-percent="80"><div class="skill-fill"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>Data Structures & Algorithms</span><span>78%</span>
+          </div>
+          <div class="skill-bar" data-percent="78"><div class="skill-fill"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>MySQL</span><span>85%</span>
+          </div>
+          <div class="skill-bar" data-percent="85"><div class="skill-fill"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>HTML / CSS / JS</span><span>82%</span>
+          </div>
+          <div class="skill-bar" data-percent="82"><div class="skill-fill"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <p class="muted">Selected projects built as part of coursework and personal learning.</p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Virtual ATM Machine (Java)</h3>
+          <p class="muted">Project Type: Java console / GUI application</p>
+          <p>
+            A Virtual ATM system implemented in Java that simulates core ATM features:
+            user authentication (pin), balance enquiry, withdrawals (with balance checks),
+            deposits, mini-statement generation and transaction logging. Designed with
+            modular classes for Account, Transaction, and ATMController — making it easy
+            to extend (e.g., add file-based persistence or a database).
+          </p>
+          <div class="project-tags"><span>Java</span><span>OOP</span><span>File I/O</span></div>
+        </article>
+
+        <article class="project-card">
+          <h3>Chatty — Real-time Chat Application</h3>
+          <p class="muted">Project Type: Real-time web / socket programming</p>
+          <p>
+            Chatty is a realtime chat application that supports multiple users,
+            private messaging, and message timestamps. Implemented using sockets
+            (or WebSocket framework) for low-latency communication, with a simple
+            UI and message history. Demonstrates understanding of concurrency,
+            event-driven programming, and user session handling.
+          </p>
+          <div class="project-tags"><span>Realtime</span><span>Sockets</span><span>Web</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Get in touch</h3>
+          <p>Prefer email? <a href="mailto:sumitkaulage37@gmail.com">sumitkaulage37@gmail.com</a></p>
+          <p>Call / WhatsApp: <a href="tel:+919359656497">+91 93596 56497</a></p>
+          <p>Location: Pandharpur</p>
+          <div class="social">
+            <!-- Add your social links if you want -->
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form" action="#" onsubmit="handleContact(event)">
+          <label>
+            Your name
+            <input id="visitorName" required type="text" placeholder="Your name">
+          </label>
+
+          <label>
+            Your email
+            <input id="visitorEmail" required type="email" placeholder="you@example.com">
+          </label>
+
+          <label>
+            Message
+            <textarea id="visitorMsg" required rows="5" placeholder="Write a short message..."></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send via Email</button>
+            <button type="button" class="btn btn-outline" id="copyPhone">Copy Phone</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="curYear"></span> Sumit Kaulage — FY B.Tech CSE • Pandharpur</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
